@@ -84,15 +84,14 @@ input:focus {
     padding: 0;
 }
 
-#result {
+.result {
     text-align: center;
     font-weight: 400;
     padding: 1em 0;
     border-radius: 0.5em;
-    display: none;
 }
 
-#result span {
+.result span {
     font-weight: bold;
 }
 
@@ -104,4 +103,8 @@ input:focus {
 .no {
     background-color: #f52a3b;
     color:#ffffff;
+}
+
+.hide {
+    display: none;
 }
