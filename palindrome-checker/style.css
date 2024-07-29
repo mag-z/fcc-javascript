@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 35em;
+    min-width: 372px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffffee;
+    padding: 4em 3em;
+    border-radius: 0.5em;
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid gray;
+    color: gray;
+    padding: 0.7em 0.5em;
+    font-weight: 400;
+    font-size: 1em;
+    width: 100%;
+}
+
+input:focus {
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+#check-btn {
+    font-size: 1em;
+    padding: 0.7em 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    background-color: #46aef7;
+    color: #ffffff;
+}
+
+#check-btn:hover {
+    background-color: #2196f3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    display: grid;
+    grid-template-columns: 0.75fr 11.25fr;
+    margin-top: 1em;
+}
+
+.note-text {
+    font-size: small;
+    font-weight: 400;
+    padding: 0 0.5em;
+}
+
+.note-icon {
+    font-size: 1em;
+    padding: 0;
+}
+
+#result {
+    text-align: center;
+    font-weight: 400;
+    padding: 1em 0;
+    border-radius: 0.5em;
+    display: none;
+}
+
+#result span {
+    font-weight: bold;
+}
+
+.yes {
+    background-color: #01bd5f;
+    color: #ffffff;
+}
+
+.no {
+    background-color: #f52a3b;
+    color:#ffffff;
+}
