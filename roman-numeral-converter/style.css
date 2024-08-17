@@ -1,0 +1,148 @@
+:root {
+    --gray-00: #ffffff;
+    --gray-05: #f5f6f7;
+    --gray-15: #d0d0d5;
+    --gray-75: #3b3b4f;
+    --gray-85: #1b1b32;
+    --gray-90: #0a0a23;
+    --blue-50: #198eee;
+    --error: #a94442;
+    --danger-color: #850000;
+    --danger-background: #ffadad;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--gray-85);
+    color: var(--gray-05);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    gap: 1.5rem;
+}
+
+#title {
+    text-align: center;
+    width: 30%;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 0.75em;
+    max-width: 600px;
+    min-width: 350px;
+    width: 30%;
+    border: 3px solid var(--gray-05);
+    background-color: var(--gray-75);
+    padding: 2em 3em;
+}
+
+#input p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#input input, 
+#input .btn-group {
+    width: 100%; /* Make all elements take up the full width of the parent */
+    margin: 0; /* Remove any default margins */
+    padding: 0.5em; /* Optional padding for better visual alignment */
+}
+
+#input input {
+    background-color: var(--gray-85);
+    color: white;
+    border: 1px solid var(--gray-05);
+    font-weight: 500;
+    font-size:large;
+}
+
+#btn-group {
+    display: flex;
+    gap: 0.75em; /* Space between the buttons */
+    width: 100%; /* Ensure buttons take full width of the parent */
+}
+
+#btn-group button {
+    flex: 1; /* Ensure both buttons have equal width */
+    font-weight: 500;
+    font-size: 1.25em;
+    padding: 0.5em;
+
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+#convert-btn {
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    /* border: 3px solid #feac32; */
+}
+
+#reset-btn {
+    background-image: linear-gradient(#ff8c8c, #ff4c4c); /* Different gradient for reset button */
+}
+
+/* Hover effects for buttons */
+#convert-btn:hover {
+    background-image: linear-gradient(#ffac33, #fecc4c); /* Reverse gradient for convert button */
+    border-color: #ffa500; /* Change border color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adding shadow effect on hover */
+}
+
+#reset-btn:hover {
+    background-image: linear-gradient(#ff4c4c, #ff8c8c); /* Reverse gradient for reset button */
+    border-color: #ff0000; /* Change border color on hover */
+}
+
+#output {
+    width: 30%;
+    max-width: 600px;
+    min-width: 350px;
+}
+
+.result {
+    color: white;
+    background-color: var(--gray-75);
+    border: 3px solid var(--gray-05);
+    font-size: 2rem;
+    /* max-width: 600px;
+    min-width: 350px; */
+
+    min-height: 55px;
+    margin-top: 25px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.alert {
+    font-size: 1.5rem;
+    /* max-width: 600px;
+    min-width: 350px;
+    width: 30%; */
+    background-color: var(--danger-background);
+    border: 3px solid var(--danger-color);
+    color: var(--danger-color);
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+}
