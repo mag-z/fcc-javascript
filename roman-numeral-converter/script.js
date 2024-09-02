@@ -28,7 +28,7 @@ const checkConvertInput = () => {
         return;
     }
 
-    if (num <= 0) {
+    if (num < 1) {
         outputText.innerHTML = `<p class="alert">Please enter a number greater or equal to 1</p>`;
         return;
     } else if (num > 3999) {
